@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>aicoinkline.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+  <script src="https://www.xjsex.co/web/js/jquery-3.3.1.min.js"></script>  
+  <link href="https://www.xjsex.co/kline2/kline/main.css" rel="stylesheet"/>
+   <script src="https://www.xjsex.co/kline2/kline/require.js"></script>
+    <style type="text/css">
+        .kline {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 500px;
+            position: relative;
+            background:#0A0A0A;
+        }
+    </style> 
+
+  </head>
+  
+  <body>
+              <!-- AICoin Widget Begin -->
+          <div class="kline"><div id="kline_container"></div></div>
+          <script type="text/javascript">	
+          require.config({
+    paths: {
+        "jquery": "../static/kline2/jquery",
+        "jquery.mousewheel": "../static/kline2/jquery.mousewheel",
+        "sockjs": "../static/kline2/sockjs",
+        "stomp": "../static/kline2/stomp",
+        "kline": "../static/kline2/kline"
+    },
+    shim: {
+        "jquery.mousewheel": {
+            deps: ["jquery"]
+        },
+        "kline": {
+            deps: ["jquery.mousewheel", "sockjs", "stomp"]
+        }
+    }
+});	
+//获取地址栏参数，name:参数名称
+function getUrlParms(name){
+  var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+  var r = window.location.search.substr(1).match(reg);
+  if(r!=null)
+  return unescape(r[2]);
+  return null;
+  }
+//var coinkline=getCookie("tradcoinname")+"_"+getCookie("maincoinname");
+var widt=$(window).width();
+var klineUrl = window.location.protocol + "//" + window.location.host + "/API/klines";
+var maincoinid=getUrlParms("maincoinid");
+var coinid=getUrlParms("coinid");
+var coinkline=coinid+"_"+maincoinid;
+alert(coinkline);
+require(['kline'], function () {
+    var kline = new Kline({
+        element: "#kline_container",
+        width: widt,
+        height: 500,
+        theme: 'dark', // light/dark
+        language: 'zh-cn', // zh-cn/en-us/zh-tw
+        ranges: ["1w", "1d", "1h", "30m", "15m", "5m", "1m", "line"],
+        symbol: coinkline,
+        //symbol: "BNB_USDT",
+        symbolName: "BTC/USDT",
+        type: "poll", // poll/socket
+       // url: "../kline2/kline/mock.json",
+        url: klineUrl,
+        limit: 80,
+        reverseColor: false,
+        intervalTime: 3000,
+        debug: false,
+        showTrade: false
+    });
+    kline.draw();
+});	
+window.onresize=function(){
+	location.reload(); 	
+			}
+		</script>
+          <!-- AICoin Widget End -->
+  </body>
+</html>

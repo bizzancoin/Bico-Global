@@ -1,0 +1,54 @@
+// 日暮主题
+// 主题颜色
+$color-primary:#FAAD14;
+// 主题关联背景色1
+$bgc1:#fff7e8;
+// 主题关联文本色1
+$color1:#fbbd43;
+// 主题关联按钮色
+$btn-color:#e19c12;
+// element-ui
+@import '../element-theme.scss';
+.el-tree--highlight-current .el-tree-node.is-current>.el-tree-node__content {
+    background-color: #fff8ec
+}
+
+.el-tag {
+    border-color: #feefd0;
+}
+
+.el-tag--plain {
+    border-color: #fddea1;
+}
+
+.el-button:focus,
+.el-button:hover {
+    border-color: #fee6b9;
+    background-color: #fff7e8
+}
+
+.el-button--primary.is-plain {
+    color: #FAAD14;
+    background: #fff7e8;
+    border-color: #fddea1
+}
+
+.el-button--primary.is-plain.is-disabled,
+.el-button--primary.is-plain.is-disabled:active,
+.el-button--primary.is-plain.is-disabled:focus,
+.el-button--primary.is-plain.is-disabled:hover {
+    color: #fcce72;
+    background-color: #fff7e8;
+    border-color: #feefd0
+}
+
+.el-link.el-link--primary.is-disabled {
+    color: #fdd68a
+}
+
+.el-checkbox-button.is-checked .el-checkbox-button__inner {
+    background-color: #FAAD14;
+    border-color: #FAAD14;
+    -webkit-box-shadow: -1px 0 0 0 #fcce72;
+    box-shadow: -1px 0 0 0 #fcce72
+}

@@ -1,0 +1,201 @@
+// 默认主题
+// 主题颜色
+$color-primary:#409EFF;
+// 主题关联背景色1
+$bgc1:#ecf5ff;
+// 主题关联文本色1
+$color1:#66b1ff;
+// 主题关联按钮色
+$btn-color:#3a8ee6;
+// element-ui
+@import '../element-theme.scss';
+.el-tree--highlight-current .el-tree-node.is-current>.el-tree-node__content {
+    background-color: #f0f7ff
+}
+
+.el-tag {
+    border-color: #d9ecff;
+}
+
+.el-tag--plain {
+    border-color: #b3d8ff;
+}
+
+.el-button:focus,
+.el-button:hover {
+    // border-color: #c6e2ff;
+    // background-color: #ecf5ff
+}
+
+.el-button--primary.is-disabled,
+.el-button--primary.is-disabled:active,
+.el-button--primary.is-disabled:focus,
+.el-button--primary.is-disabled:hover {
+    background-color: #a0cfff;
+    border-color: #a0cfff
+}
+
+.el-button--primary.is-plain {
+    color: #409EFF;
+    background: #ecf5ff;
+    border-color: #b3d8ff
+}
+
+.el-button--primary.is-plain.is-disabled,
+.el-button--primary.is-plain.is-disabled:active,
+.el-button--primary.is-plain.is-disabled:focus,
+.el-button--primary.is-plain.is-disabled:hover {
+    color: #8cc5ff;
+    background-color: #ecf5ff;
+    border-color: #d9ecff
+}
+
+.el-link.el-link--primary.is-disabled {
+    color: #a0cfff
+}
+
+.el-checkbox-button.is-checked .el-checkbox-button__inner {
+    background-color: #409EFF;
+    border-color: #409EFF;
+    -webkit-box-shadow: -1px 0 0 0 #8cc5ff;
+    box-shadow: -1px 0 0 0 #8cc5ff
+}
+
+//换颜色
+.mark-box{
+    background: $hb-blackbg;
+    .mark_price{
+        li{
+            background: $hb-blackbg;
+            &:hover{
+              background: $hb-markhover;
+            }
+            .coinname{color:#b0b8db;}
+            .mpcolor{color: #b0b8db;}
+            .price{color:$hb-price; }
+        }
+        li:after{border-left:1px solid hsla(0,0%,100%,.15)}
+    }
+}
+.pur-back{
+    background: $hb-blackbg;
+    border-bottom: 1px solid hsla(0,0%,100%,.15);
+    .pur-center{
+			h3{color: #ffffff;}
+		}
+}
+.notice-bar{
+  background: $hb-boticebg;
+  .text-wrap{
+    color: $hb-acor;
+  }
+}
+// 优势介绍
+.terrace_tips{
+  p{
+    color: $hb-yst;
+    em{color: #185dd3;background-image: linear-gradient(180deg,#185dd3,#061d79);padding: 0 5px;}
+  }
+  .do_title{color: $hb-ystc;}
+}
+// 币币交易
+.page-global-exchange{
+	// background: #0a0c1b;
+	color: #b0b8db;
+}
+
+.coin-switch,.trade-table{
+	// .coin_list{
+		.el-table th, .el-table tr{
+			color: #b0b8db;
+			background: #171b2b;
+		}
+		.el-table td, .el-table th.is-leaf{
+			border-bottom: 1px solid transparent;
+		}
+		.el-table td, .el-table th{
+			padding: 0 0px;
+			background: #131625;
+		}
+	// }
+	.el-table tr {
+		cursor: pointer;
+		&:hover{
+			td{
+				background: #21273c;
+			}	
+		}
+		.coinname{color: #b0b8db;}
+		.currency{color: #b0b8db;}
+	}	
+}
+
+// kline
+.trading-chart {
+	background-color: #171b2b;
+	.ticker {
+		background-color: #131625;
+		border-bottom: 1px solid #111217;
+	}
+	.ticker>.symbol-name {
+		color: #d2d6ec;
+	}
+	.container {
+    background-color: #171b2b;
+	}
+	.chart-actions {
+    border-color: #111217;
+	}
+}
+// buysell_trad 买入卖出交易
+.buysell_trad{
+	.el-tabs__header{background: #131625;}
+	.el-tabs__nav{left: 10px;}
+	.el-tabs__item{
+		color: #b0b8db;
+		
+		// .is-active{color: #d2d6ec!important;}
+	}
+	.el-tabs__nav-wrap::after{height: 1px;background-color: #131625;}
+	input{border:1px solid #383f66;background: rgba(19,22,37,.2);color: #d2d6ec;}
+	.el-input.is-disabled {
+		.el-input__inner{color: #61688a;background: #131625;border-color: #383f66;}
+		input:-ms-input-placeholder,textarea:-ms-input-placeholder {
+			color: #61688a;
+		}
+	}
+	.el-form-item__label{color: #61688a;}
+	.el-form-item{margin-bottom: 0;}
+	.bor-right{border-right: 1px dashed #383f66;}
+	.ex_btn{
+		button{background: transparent;border: 1px solid #383f66;color: #357ce1;}
+		.corbuy{background: $color-success;color: #ffffff;border: 1px solid  $color-success;}
+		.corsell{background: $color-danger;color: #ffffff;border: 1px solid  $color-danger;}
+	}
+	.ex_tips{
+		span{color: #61688a;}
+		em{color: #d2d6ec;}
+	}
+	.el-slider__runway{background-color: #252a44;}
+	.el-slider__stop{background-color: #353d66;}
+}
+.history_box{
+  background: #171b2b;
+}
+.trademain{
+	.el-table__body-wrapper{background: #171b2b;}
+}
+
+
+// 法币交易
+.menu_container{
+	.el-menu-demo{background: $hb-head;}
+	.el-menu.el-menu--horizontal{border-bottom:  1px solid $hb-head;}
+	.el-menu--horizontal>.el-menu-item:hover{background: #1b2945;color: #ffffff;}
+	.el-menu--horizontal>.el-menu-item{color: #87a2cd;}
+	.el-menu--horizontal>.el-menu-item.is-active{background:$hb-head;}
+}
+
+.tr_topmenu{
+  background: $hb-head;border-top:1px solid #171c2c ;
+}

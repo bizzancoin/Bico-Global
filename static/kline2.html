@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>aicoinkline.html</title>
+
+	<meta name="keywords" content="keyword1,keyword2,keyword3">
+	<meta name="description" content="this is my page">
+	<meta name="content-type" content="text/html; charset=UTF-8">
+
+	<!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<script src="../kline2/jquery.js"></script>
+	<link href="../kline2/main.css" rel="stylesheet" />
+	<script src="../kline2/require.js"></script>
+	<style type="text/css">
+		.kline {
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			height: 500px;
+			position: relative;
+			background: #0A0A0A;
+		}
+	</style>
+
+</head>
+
+<body>
+	<!-- AICoin Widget Begin -->
+	<div class="kline">
+		<div id="kline_container"></div>
+	</div>
+	<script type="text/javascript">
+		require.config({
+			paths: {
+				"jquery": "../kline2/kline/jquery",
+				"jquery.mousewheel": "../kline2/kline/jquery.mousewheel",
+				"sockjs": "../kline2/kline/sockjs",
+				"stomp": "../kline2/kline/stomp",
+				"kline": "../kline2/kline/kline"
+			},
+			shim: {
+				"jquery.mousewheel": {
+					deps: ["jquery"]
+				},
+				"kline": {
+					deps: ["jquery.mousewheel", "sockjs", "stomp"]
+				}
+			}
+		});
+		//var coinkline=getCookie("tradcoinname")+"_"+getCookie("maincoinname");
+		var widt = $(window).width();
+		require(['kline'], function () {
+			var kline = new Kline({
+				element: "#kline_container",
+				width: widt,
+				height: 1000,
+				theme: 'dark', // light/dark
+				language: 'zh-cn', // zh-cn/en-us/zh-tw
+				ranges: ["1w", "1d", "1h", "30m", "15m", "5m", "1m", "line"],
+				//symbol: coinkline,
+				symbol: "BNB_USDT",
+				symbolName: "BTC/USDT",
+				type: "poll", // poll/socket
+				// url: "../kline2/kline/mock.json",
+				url: "http://192.168.16.223/API/klines",
+				limit: 20,
+				reverseColor: false,
+				intervalTime: 5000,
+				debug: false,
+				showTrade: false
+			});
+			kline.draw();
+		});
+		window.onresize = function () {
+			location.reload();
+		}
+	</script>
+	<!-- AICoin Widget End -->
+</body>
+
+</html>

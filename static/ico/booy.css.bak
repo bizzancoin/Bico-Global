@@ -1,0 +1,10 @@
+
+
+
+body
+{
+        
+        padding:0; font-family:arial, sans-serif; font-size:12px;
+        margin:0px auto auto auto;
+        color:#36322b;
+}

@@ -1,0 +1,24 @@
+// 默认主题
+.theme-default {
+    @import "../theme/default/index.scss";
+}
+
+// 薄暮主题
+.theme-luomu {
+    @import "../theme/luomu/index.scss";
+}
+
+// 酱紫主题
+.theme-jiangzi {
+    @import "../theme/jiangzi/index.scss";
+}
+
+// 日暮主题
+.theme-rimu {
+    @import "../theme/rimu/index.scss";
+}
+
+// 明青主题
+.theme-mingqing {
+    @import "../theme/mingqing/index.scss";
+}

@@ -1,0 +1,36 @@
+.el-form--label-top .el-form-item__label{padding: 0;}
+.flex-between{display: flex;}
+.logibox{
+  .el-form-item{
+    margin-bottom:6px;
+  }
+}
+.opt_right{
+  .input-with-select{
+    .el-input__inner{width:105px;}
+  }
+}
+
+// 法币交易
+.trade_container{
+  .el-main{padding: 0;}
+}
+.main_rightbox{
+  .el-card{border:none;}
+}
+
+// 注册
+.p_tab{
+  span{font-weight: 600;}
+  .el-radio__input{display: none;}
+}
+// 币币交易
+.right-history{
+  .el-table__empty-block{
+    background: #171b2b;height: 500px;
+  }
+}
+.bottombox-list{
+  .el-table__empty-block{background: #171b2b;}
+}
+

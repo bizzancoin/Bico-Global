@@ -1,0 +1,18 @@
+
+article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}
+@font-face {
+    font-family: 'Gate_Sans';
+    src: url('/static/zmzit/GateProductSans.ttf');
+}
+@font-face {
+    font-family: 'Gate_Sans Light';
+    src: url('/static/zmzit/GateProductSans-Light.ttf');
+}
+@font-face {
+    font-family: 'Gate_Sans Bold';
+    src: url('/static/zmzit/GateProductSans-Bold.ttf');
+}
+@font-face {
+    font-family: 'Gate_Sans Medium';
+    src: url('/static/zmzit/GateProductSans-Medium.ttf');
+}

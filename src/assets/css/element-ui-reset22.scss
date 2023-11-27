@@ -1,0 +1,175 @@
+$color-primary: #ab1e24;
+$bor-boder:#686459;
+.el-input__inner {
+  border-radius: 0;
+  transition: all 0.3s;
+  background: #0a0a0a;
+  border-color: $bor-boder;
+  &:hover,
+  &:focus {
+    border-color: $bor-boder;
+  }
+  .el-tabs__item:hover {
+    color: $color-primary !important;
+  }
+}
+.el-radio__input.is-checked .el-radio__inner {
+  border-color: $color-primary;
+  background: $color-primary;
+}
+.el-radio__input.is-checked + .el-radio__label {
+  color: $color-primary;
+}
+.el-table th {
+  font-weight: 500;
+  font-size: 15px;
+  color: #dfdfdf;
+  @media screen and (max-width: 1366px) {
+    font-size: 14px;
+  }
+}
+.el-table th > .cell {
+  padding: 0 4px;
+}
+.el-table td,
+.el-table th {
+  padding: 8px 0 !important;
+  @media screen and (max-width: 1366px) {
+    padding: 4px 0 !important;
+  }
+}
+.el-table {
+  color: $txt-coinc;
+  background: $bg-darkfoot;
+}
+.el-aside {
+  border-right: 1px solid #e5e5e5;
+  padding: 20px 20px 0 20px;
+}
+.el-breadcrumb__item:last-child .el-breadcrumb__inner {
+  color: $color-danger;
+}
+.el-breadcrumb__inner a:hover,
+.el-breadcrumb__inner.is-link:hover {
+  color: $color-danger !important;
+}
+.el-select .el-input.is-focus .el-input__inner {
+  border-color: $color-primary;
+}
+.el-select .el-input__inner:focus {
+  border-color: $color-primary;
+}
+.el-select-dropdown__item.selected {
+  color: $color-primary;
+}
+.el-input.is-disabled .el-input__inner {
+  color: #666;
+}
+.el-form--label-top .el-form-item__label {
+  padding: 0;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+.el-tabs__item {
+  font-size: 16px;
+  @media screen and (max-width: 1366px) {
+    font-size: 14px;
+  }
+  &:hover {
+    color: $color-primary;
+  }
+  &.is-active {
+    color: $color-primary;
+  }
+}
+.el-menu {
+  border-right: none;
+  .el-menu-item,
+  .el-submenu__title {
+    height: 46px;
+    line-height: 46px;
+  }
+}
+.tabtitle{
+	.el-tabs__item{font-size: 20px;}
+}
+.v_protable {
+  .el-table tr th{background-color: #eeeeee;text-align: center;}
+  .el-table tr td {text-align: center;}
+}
+.el-table .cell{padding-left: 5px!important}
+.index_table{
+  .el-table thead{
+    tr th{
+      background: #232323;
+      color: #757575;
+    }
+  }
+  
+}
+
+.el-table th, .el-table tr{background: #0a0a0a}
+.el-table td, .el-table th.is-leaf{border-bottom: 1px solid #252525;}
+.el-table--enable-row-hover .el-table__body tr:hover > td {
+  background-color: #171717;  }
+.el-table:before{background-color:#171717;} 
+.el-table__empty-block{background: #252525;}
+.el-card{border:0;border-radius: 0;}
+.el-card__header {
+  border-bottom: 1px solid #313131;
+  background: #313131;
+  color: #d8b178;
+}
+.el-card__body {
+  background: #1e1e1e;
+}
+
+// 定义白色背景的表格
+.table_fff{
+  .el-table th, .el-table tr{background: #ffffff}
+  .el-table td, .el-table th.is-leaf{border-bottom: 1px solid #ececec;color: #333333}
+  .el-table--enable-row-hover .el-table__body tr:hover > td {background-color: #ececec;}
+  .el-table__empty-block{background: #ffffff;color: #333333}
+  .el-table:before{background: #eeeeee;}
+}
+.back_fff{
+  .el-input__inner{background: #fff;border:1px solid #eeeeee;}
+}
+.box_item{
+  .el-tabs__nav-wrap::after{background: #272727;}
+  .el-tabs__item.is-active{color: #46d48a;font-size: 24px;}
+  .el-tabs__item{color: #ffffff;}
+  .el-tabs__active-bar{background-color: #46d48a;}
+}
+.input_two{
+  .el-input__inner{width: 500px;color: #ffffff;}
+}
+.alltrad_box{
+  .el-tabs__nav-wrap::after{background: #272727;}
+  .el-tabs__item.is-active{color: $txt-pbold;}
+  .el-tabs__item{color: #ffffff;}
+  .el-tabs__active-bar{background-color: $txt-pbold}
+}
+// 弹窗的输入框为白色
+.dialog-body{
+  .el-input__inner{background: #ffffff;border:1px solid #eeeeee;}
+}
+// 弹窗
+.el-dialog__header{
+  background: #313131;
+}
+.el-dialog__title{color: $txt-pbold;}
+.w400{
+  .el-input__inner{background: #ffffff;color: #0a0a0a;border:1px solid #e5e5e5;}
+}
+.el-collapse{border-top: 1px solid #313131;border-bottom: 1px solid #313131;}
+.el-collapse-item__content{background: #505050;color: #ffffff;}
+.el-collapse-item__wrap{border-bottom: 1px solid #313131;}
+.upcoin{
+  .el-input__inner{background: #ffffff;border:1px solid #eeeeee;}
+}
+.login {
+  .el-radio{color: #ffffff;}
+  .el-form--label-top .el-form-item__label{color: $txt-pbold}
+  .dialog-body .el-input__inner{background: #282424;border:1px solid #6f6049;color: #ffffff;};
+}

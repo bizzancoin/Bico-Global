@@ -1,0 +1,26 @@
+.icon-gonggao {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.20em;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+@font-face {
+    font-family: "iconfont"; /* Project id 3127174 */
+    src: url('//at.alicdn.com/t/font_3127174_t44ucjyk0rm.woff2?t=1641693863602') format('woff2'),
+         url('//at.alicdn.com/t/font_3127174_t44ucjyk0rm.woff?t=1641693863602') format('woff'),
+         url('//at.alicdn.com/t/font_3127174_t44ucjyk0rm.ttf?t=1641693863602') format('truetype');
+  }
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-gonggao:before {
+    content: "\e674";
+  }

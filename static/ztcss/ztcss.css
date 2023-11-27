@@ -1,0 +1,18 @@
+
+article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}
+@font-face {
+    font-family: 'Uni Neue';
+    src: url('/static/ztcss/UniNeue-Regular.ttf');
+}
+@font-face {
+    font-family: 'Uni Neue Light';
+    src: url('/static/ztcss/UniNeue-Light.ttf');
+}
+@font-face {
+    font-family: 'Uni Neue Bold';
+    src: url('/static/ztcss/UniNeue-Bold.ttf');
+}
+@font-face {
+    font-family: 'Uni Neue Heavy';
+    src: url('/static/ztcss/UniNeue-Heavy.ttf');
+}

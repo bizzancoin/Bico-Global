@@ -1,0 +1,50 @@
+@charset "utf-8";
+$font_default_color:$font-color-shallow3;
+$font_default_size:$font_medium_s;
+ 
+*{
+	margin:0;padding:0;box-sizing:border-box;color:$font_default_color;
+	/*@include font-dpr($font_default_size);*/
+}
+a{text-decoration:none;color:$font_default_color;}
+.sub-page { //routerView
+  position: fixed;top: 0;bottom: 0;width: 100%;background:#fff;right: 0;left: 0;z-index: 5;
+}
+#content{width:100%;position:absolute;@include px2rem(top,88px);bottom:0;overflow-x:auto;}
+.width{
+	width:100%;
+}
+/*竖向居中*/
+.table-cell{
+	display:table-cell;vertical-align:middle;text-align:center;
+}
+.middle{
+	vertical-align:middle;
+}
+/*弹性盒*/
+.flex{
+	display: inline-flex;display: -webkit-flex;display: flex;
+}
+/*弹性盒-子元素可竖向居中*/
+.flex-middle{
+	display :flex; display:-webkit-flex; align-items:center; -webkit-align-items:center; justify-content:center ;
+}
+.tl{
+	text-align:left;
+}
+.tc{
+	text-align:center;
+}
+.tr{
+	text-align:right;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.clear::after{
+	/*原理： overflow!=visible ;display!=block;float!=none;position!=static||relative 都可为元素创建BFC；消除边距重叠或者浮动产生的影响*/
+	content:'';overflow:hidden;clear:both;
+}

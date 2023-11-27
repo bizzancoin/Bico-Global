@@ -1,0 +1,163 @@
+$bg-white: #fff;
+$main-bg-color: #f55a55;
+$hover-bg-color: #fff;
+$color-success: #41b37d;
+$color-danger: #d74e5a;
+$bg-dark: #1e1e1e;
+$bg-darkfoot: #1a1a1a;
+$main-font-color: #333;
+$color-primary: #409eff;
+$input-height: 40px;
+$btn-height: 40px;
+
+$base-font-size: 14px;
+$font-mini: 12px;
+$font-default: 14px;
+$txt-tips:#aab2d7;
+$bg-foot:#131224;
+$font-normal: 16px;
+$font-middile: 18px;
+$font-large: 20px;
+$font-ex-large: 24px;
+$bd-size: 1px;
+$bd-color: #666666;
+$txt-red:#ff6059;
+$txt-hui:#6f6a6a;
+$txt-footgold:#c6a971;
+$txt-pbold:#e1a96c;
+$hb-head:#1b2945;
+$text_color:#e1a96c;
+// 1px solid #17232f 导航下的边框
+$default-border: $bd-size solid $bd-color;
+$mask-bg-rgba: rgba(0, 0, 0, 0.6);
+$body-dark:#0a0a0a;
+$txt-coinc:#d9d9d9;
+$txt-bluea:#adb2da;
+$border-bot:#e3625c;
+$txt-fff:#ffffff;
+$card-title-bg:#191933;
+$m-linkcor:#dfb77c;
+$color-gold:#e9bc7b;
+$hq-bgcor: #0a0a0a;
+$elcon_border:#282828;
+$content-width: 66%;
+$bottcor:#eeeeee;
+$color-three:#333333;
+$price_bg:#0a0a0a;
+$footdd:#B7C5DB;
+$tabbod:#d1d3df;
+// 可生态
+$hb-fffbg:#ffffff;
+$hb-blackbg:#000923;
+$hb-markhover:#101c39;
+$hb-price:#d2d6ec;
+$hb-boticebg:#f6f9fc;
+$hb-acor:#1c242c;
+$w-bor:#e6e6e6;
+$w-txtcor:#161826;
+$w-txtem:#66718f;
+$hb-yst:#192544;
+$hb-ystc:#495666;
+$hb-exchbgf:#e5ebf5;
+$hb-exchbgh:#252a44;
+$min-boxwh:1357px;
+.color-danger {
+  color: $main-bg-color;
+}
+.color-success {
+  color: $color-success;
+}
+.color-primary {
+  color: $color-primary;
+}
+.color-gold{
+  color: $color-gold;
+}
+.font-blue {color: #357ce1;}
+.color-red{color: $color-danger}
+.color-blue{color: #0DC8ED}
+.color-fff{color: $txt-fff}
+.color_up,.color-buy{color: #41b37d;}
+.color_down,.color-sell{color: #d74e5a;}
+.color_txtdd{color: $footdd;}
+.color-blamk{color: #333333}
+@mixin textVcenter($height: 40px) {
+  height: $height;
+  line-height: $height;
+}
+
+@mixin float($float: left) {
+  float: $float;
+}
+@mixin minWidth($min: 1357px) {
+  min-width: $min;
+}
+@mixin hCenter {
+  margin: 0 auto;
+}
+@mixin breakLine($height: 1px, $bgcolor: #e1e1e1, $width: 100%) {
+  height: $height;
+  background-color: $bgcolor;
+  width: $width;
+}
+button.btn-hover:hover {
+  opacity: 0.9;
+}
+
+button.btn-default {
+  background-color: #fff;
+  color: #333;
+  border-color: #eee;
+}
+button.btn-danger {
+  background-color: #fe5f5b!important;
+  color: #fff;
+}
+button.btn-success {
+  background-color: #3db877!important;
+  color: #fff;
+}
+button.btn-gold{
+  background-color: $color-primary;
+  color: #fff;
+}
+.col_ccff{color: #d2d6ec;}
+.upper{text-transform: uppercase;}
+input {
+  caret-color: #357ce1;
+}
+.el-table::before{background: transparent;}
+
+.histable-list{
+  
+		.el-table th, .el-table tr{
+			color: #61688a;
+      background:#131722;
+			
+		}
+		.el-table td, .el-table th.is-leaf{
+			border-bottom: 1px solid transparent;
+		}
+		.el-table td, .el-table th{
+			padding: 5px 0px;
+		}
+	.el-table tr {
+		cursor: pointer;
+		&:hover{
+			td{
+				background: #21273c;
+			}	
+		}
+		.coinname{color: #b0b8db;}
+		.currency{color: #b0b8db;}
+	}	
+}
+
+.h-bor-top {border-top: 1px solid #171c2c;}
+
+.color-pgreen{color: #0da88b;background-color: rgba(13,168,139,.1);padding: 5px 10px;}
+.color-pred{color: #ef5656;background-color: rgba(239,86,86,.1);padding: 5px 10px;}
+.font-w600{font-weight: 600;}
+
+//极验
+.dx_captcha_basic-style-popup{z-index: 9100;}

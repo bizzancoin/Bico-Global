@@ -1,0 +1,154 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <script src="./js/jquery-1.11.1.min.js"></script>
+  <title> App下载页</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .weixin-tip {
+      display: none;
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.8);
+      filter: alpha(opacity=80);
+      height: 100%;
+      width: 100%;
+      z-index: 100;
+    }
+
+    .weixin-tip p {
+      text-align: center;
+      margin-top: 10%;
+      padding: 0 5%;
+    }
+
+    img {
+      width: 100%;
+      pointer-events: none;
+      vertical-align: middle;
+    }
+
+    .logo_box {
+      width: 60%;
+      margin: auto;
+      padding: 10vh 5vw;
+    }
+
+    .download_box_div {
+      width: 60%;
+      left: 20%;
+      position: absolute;
+      top: 70vh;
+      z-index: 10;
+    }
+
+    .download_android {
+      width: 100%;
+      display: block;
+    }
+
+    .download_ios {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 500px) {
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+
+      .download_box {
+        min-width: 320px;
+        height: 100%;
+        min-height: 560px;
+        margin: auto;
+        background: url("./img/dl_bj.png") no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        text-align: center;
+      }
+    }
+
+    @media screen and (min-width: 500px) {
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        min-width: 500px;
+        margin: 0;
+      }
+
+      .download_box {
+        width: 500px;
+        height: 100%;
+        min-height: 700px;
+        margin: auto;
+        background: url("./img/dl_bj.png") no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="download_box">
+    <!-- <div class="logo_box">
+      <img src="./img/logo.png" alt="">
+    </div> -->
+    <div class="download_box_div">
+      <a href="javasprict::void(0)" class="download_ios">
+        <img src="./img/ios_btn.png" alt="" srcset="">
+      </a>
+      <a href="xxxxxx.apk" class="download_android">
+        <img src="./img/android_btn.png" alt="" srcset="">
+      </a>
+    </div>
+  </div>
+  <div class="weixin-tip">
+    <p>
+      <img src="./img/live_weixin.png" alt="微信打开" />
+    </p>
+  </div>
+  <script>
+    $(window).on("load", function () {
+      var winHeight = $(window).height();
+      function is_weixin() {
+        var ua = navigator.userAgent.toLowerCase();
+        if (ua.match(/MicroMessenger/i) == "micromessenger") {
+          return true;
+        } else {
+          return false;
+        }
+      }
+      var isWeixin = is_weixin();
+      if (isWeixin) {
+        $(".weixin-tip").css("height", winHeight);
+        $(".weixin-tip").show();
+      }
+    })
+  </script>
+</body>
+
+</html>
