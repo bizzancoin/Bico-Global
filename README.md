@@ -3,6 +3,20 @@
 
 数字火币区块链系统，BicoGlobal交易所源码/仿币安火币/法币交易/理财期权/矿机认购/运营版本。
 
+前端PC站：https://www.kaifazhe.store
+
+前端H5站：https://mob.kaifazhe.store
+
+代理商登录：https://agent.kaifazhe.store
+
+测试账号：ovouvogh@gmail.com
+
+测试密码：123456
+
+管理员测试：https://admin.kaifazhe.store
+账号：admin
+密码：123456
+
 # 架构
 
 BicoGlobal数字货币区块链交易所系统, 需要技术支持以及完整商业版本，请联系我：https://t.me/usdtvps666
