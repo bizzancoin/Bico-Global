@@ -87,7 +87,7 @@ https://github.com/bizzancoin/token-usdt-auto-bnb
 
 
 ``` bash
-# install dependencies
+# install dependencies，建议使用全局代理，否则会报错，即install 成功，但有缺失
 npm install
 
 # serve with hot reload at localhost:8080
