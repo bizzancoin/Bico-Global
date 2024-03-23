@@ -29,7 +29,7 @@
 
 BicoGlobal数字货币区块链交易所系统, 需要技术支持以及完整商业版本，请联系我：https://t.me/usdtvps666
 
-#### 自助下单：https://www.bnbcode.com，感谢大家支持！
+#### 自助下单：https://www.bnbcode.com
 
 - JAVA Jvm C+ 开发
 - WEB端采用 Vue3.js Mvc Element UI 开发
