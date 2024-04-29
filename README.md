@@ -2,24 +2,26 @@
 # 简介
 
 ```
+域名已污染，测试站已关闭，近期注册新域名部署demo 。
+
 提供腾讯云镜像文件、VMWARE 虚拟机本地java 开发环境和VUE开发环境。
 ```
 
 数字火币区块链系统，BicoGlobal交易所源码/仿币安火币/法币交易/理财期权/矿机认购/运营版本。
 
-前端PC站：https://www.kaifazhe.store
+~~前端PC站：https://www.kaifazhe.store~~
 
-前端H5站：https://mob.kaifazhe.store
+~~前端H5站：https://mob.kaifazhe.store~~
 
-代理商登录：https://agent.kaifazhe.store
+~~代理商登录：https://agent.kaifazhe.store~~
 
-测试账号：ovouvogh@gmail.com
+~~测试账号：ovouvogh@gmail.com~~
 
-测试密码：123456
+~~测试密码：123456~~
 
-管理员测试：https://admin.kaifazhe.store
-账号：admin
-密码：123456
+~~管理员测试：https://admin.kaifazhe.store~~
+~~账号：admin~~
+~~密码：123456~~
 
 ![域名到期](/.image/dom.jpg)
 
