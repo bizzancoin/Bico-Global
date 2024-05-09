@@ -9,19 +9,21 @@
 
 数字火币区块链系统，BicoGlobal交易所源码/仿币安火币/法币交易/理财期权/矿机认购/运营版本。
 
-~~前端PC站：https://www.kaifazhe.store~~
+### 测试Demo
 
-~~前端H5站：https://mob.kaifazhe.store~~
+```
+前端PC站：https://bicopc.worldbrains.chat
+前端H5站：https://bicoh5.worldbrains.chat
+代理商登录：https://bicoag.worldbrains.chat/
+测试账号：ovouvogh@gmail.com
+测试密码：123456
 
-~~代理商登录：https://agent.kaifazhe.store~~
-
-~~测试账号：ovouvogh@gmail.com~~
-
-~~测试密码：123456~~
-
-~~管理员测试：https://admin.kaifazhe.store~~
-~~账号：admin~~
-~~密码：123456~~
+管理员测试：
+https://bicoad.worldbrains.chat
+账号：admin
+密码：123456
+安全码：123456
+```
 
 ![域名到期](/.image/dom.jpg)
 
