@@ -26,14 +26,8 @@
 ### 测试Demo
 
 ```
-前端PC站：https://bicopc.worldbrains.chat
-前端H5站：https://bicoh5.worldbrains.chat
-代理商登录：https://bicoag.worldbrains.chat/
-测试账号：ovouvogh@gmail.com
-测试密码：123456
-
-管理员测试：
-https://bicoad.worldbrains.chat
+前端PC站：https://bicopc.testjys.shop
+测试域名已更新
 
 ```
 
