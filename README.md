@@ -26,8 +26,18 @@
 ### 测试Demo
 
 ```
+测试Demo
 前端PC站：https://bicopc.testjys.shop
-测试域名已更新
+前端H5站：https://bicoh5.testjys.shop
+代理商登录：https://bicoag.testjys.shop
+测试账号：douyaolai@qq.com
+测试密码：123456
+管理员测试：https://bicoad.testjys.shop
+管理测试：ovouvogh
+管理密码：123456
+安全码：123456
+
+这个测试站用的域名近期会替换掉，很多客户测试的时候反馈 进黑名单了！
 
 ```
 
