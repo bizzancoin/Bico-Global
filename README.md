@@ -1,5 +1,5 @@
 # 2024 区块链永续合约最新BicoGlobal交易所源码/仿币安火币/法币交易/理财期权/矿机认购/运营版本
-# 警告！！！
+# 警惕，现在骗子拿我演示站到处"路演"
 
 我提供的演示站，后台账户 是管理员权限。
 
@@ -26,24 +26,17 @@
 ### 测试Demo
 
 ```
-测试Demo
-前端PC站：https://bicopc.testjys.shop
-前端H5站：https://bicoh5.testjys.shop
-代理商登录：https://bicoag.testjys.shop
+前端PC站：https://bicopc.aiecho666.top
+前端H5站：https://bicoh5.aiecho666.top
+代理商登录：https://bicoag.aiecho666.top
 测试账号：douyaolai@qq.com
 测试密码：123456
-管理员测试：https://bicoad.testjys.shop
-管理测试：ovouvogh
-管理密码：123456
-安全码：123456
+管理员测试：联系我
 
-这个测试站用的域名近期会替换掉，很多客户测试的时候反馈 进黑名单了！
 
 ```
 
-![域名到期](/.image/dom.jpg)
 
-域名今年9月份到期，兄弟们记得到时候来这关注最新域名！
 
 # 架构
 
